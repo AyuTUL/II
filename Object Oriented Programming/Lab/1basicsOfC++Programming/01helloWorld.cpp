@@ -1,4 +1,4 @@
-// Lab 1 : Write a program in C++ to print “Hello World”
+// Lab 1.1: Write a program in C++ to print “Hello World”
 #include <iostream>
 using namespace std;
 int main()

@@ -1,4 +1,4 @@
-// Lab 4: Write a program in C++ that reads a number and then check whether it is prime or composite
+// Lab 1.4: Write a program in C++ that reads a number and then check whether it is prime or composite
 #include <iostream>
 using namespace std;
 int main()

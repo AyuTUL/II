@@ -1,4 +1,4 @@
-// Lab 9: Write a program in C++ to find product of two 3*3 matrices
+// Lab 1.9: Write a program in C++ to find product of two 3*3 matrices
 #include <iostream>
 using namespace std;
 int p[3][3] = {0};

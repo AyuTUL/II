@@ -1,4 +1,4 @@
-// Lab 10: Write a program in C++ to find product of two numbers using recursive function
+// Lab 1.10: Write a program in C++ to find product of two numbers using recursive function
 #include <iostream>
 using namespace std;
 int prod(int x, int y)

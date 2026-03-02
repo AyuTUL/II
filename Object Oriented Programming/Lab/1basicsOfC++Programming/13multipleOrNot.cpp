@@ -1,4 +1,4 @@
-// Lab 13: Write a C++ program to read two integer values m and n and to decide and print whether m is a multiple of n or not
+// Lab 1.13: Write a C++ program to read two integer values m and n and to decide and print whether m is a multiple of n or not
 #include <iostream>
 using namespace std;
 int main()

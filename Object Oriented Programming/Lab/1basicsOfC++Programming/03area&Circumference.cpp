@@ -1,4 +1,4 @@
-// Lab 3: Write a C++ program that reads radius of circle and finds area and circumference
+// Lab 1.3: Write a C++ program that reads radius of circle and finds area and circumference
 #include <iostream>
 #define PI 3.1416
 using namespace std;

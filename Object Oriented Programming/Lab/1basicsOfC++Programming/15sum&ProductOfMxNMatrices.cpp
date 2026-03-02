@@ -1,4 +1,4 @@
-// Lab 15: Write a program in C++ to read two matrices of size m*n from the keyboard and then find sum and product of these two matrices. Use function to read, to find sum and to find product
+// Lab 1.15: Write a program in C++ to read two matrices of size m*n from the keyboard and then find sum and product of these two matrices. Use function to read, to find sum and to find product
 #include <iostream>
 #define M 5
 #define N 5

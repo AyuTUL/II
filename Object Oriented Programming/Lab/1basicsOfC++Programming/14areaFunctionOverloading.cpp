@@ -1,4 +1,4 @@
-// Lab 14: Write a program in C++to compute the area of circle and area of triangle by overloading the area () function
+// Lab 1.14: Write a program in C++to compute the area of circle and area of triangle by overloading the area () function
 #include <iostream>
 using namespace std;
 double area(int b, int h)

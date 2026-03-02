@@ -1,4 +1,4 @@
-// Lab 2 : Write a program in C++ that reads a numbers and then find its reverse
+// Lab 1.2: Write a program in C++ that reads a numbers and then find its reverse
 #include <iostream>
 using namespace std;
 int main()

@@ -1,4 +1,4 @@
-// Lab 8:Write a C++ program that read that finds cube of a number using inline function
+// Lab 1.8: Write a C++ program that read that finds cube of a number using inline function
 #include <iostream>
 using namespace std;
 inline double cube(double n)

@@ -1,4 +1,4 @@
-// Lab 7: Write a C++ program that computer simple interest using default arguments function
+// Lab 1.7: Write a C++ program that computer simple interest using default arguments function
 #include <iostream>
 using namespace std;
 double si(double p, double t, double r = 7)

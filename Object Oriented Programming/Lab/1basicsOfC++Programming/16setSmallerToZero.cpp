@@ -1,4 +1,4 @@
-// Lab 16: Write a function called zeroSmaller () that is passed two int arguments by reference and then sets the smaller of two numbers to 0. Write a main () program to exercise this function
+// Lab 1.16: Write a function called zeroSmaller () that is passed two int arguments by reference and then sets the smaller of two numbers to 0. Write a main () program to exercise this function
 #include <iostream>
 using namespace std;
 void zeroSmaller(int *a, int *b)

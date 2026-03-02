@@ -1,4 +1,4 @@
-// Lab 6 : Write a program in C++ that reads two numbers n1 and n2 and then print all prime numbers between n1 and n2
+// Lab 1.6: Write a program in C++ that reads two numbers n1 and n2 and then print all prime numbers between n1 and n2
 #include <iostream>
 using namespace std;
 int main()

@@ -1,4 +1,4 @@
-// Lab 5: Write a program in C++ that prints prime numbers from 300 to 500.Write a program in C++ that prints prime numbers from 300 to 500.
+// Lab 1.5: Write a program in C++ that prints prime numbers from 300 to 500.Write a program in C++ that prints prime numbers from 300 to 500.
 #include <iostream>
 using namespace std;
 int main()

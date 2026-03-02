@@ -1,4 +1,4 @@
-// Lab 11:Write a program in C++ to find sum of digits of a number using recursive function
+// Lab 1.11: Write a program in C++ to find sum of digits of a number using recursive function
 #include <iostream>
 using namespace std;
 int sum(int n)
