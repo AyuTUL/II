@@ -1,0 +1,141 @@
+What is sampling? Explain the main purpose of sampling. Describe briefly stratified sampling.
+Write short notes on any two:
+Random variable and probability distribution
+Five number summary
+Sampling error.
+Differentiate between primary data and secondary data. What are the sources of secondary data?
+assumption of simple linear gression
+What do you understand by sampling? Differentiate between a simple random variable and stratified random sampling.
+Write notes on any two:
+Nominal and ordinal scale
+Kurtosis
+Five number summary
+What do your mean by measurement scale? Describe the different types of measurement scales used in statistics.
+What is sampling? Discuss various probability sampling techniques with merits and demerits.
+Define primary data and secondary data and explain the difference between them.
+What do you mean by sampling? Explain non probability sampling with merits and demerits.
+
+nd probn
+statistics:
+science of collecting, organizing,analyzing,interpreting numerical
+data to make informed descision. used for validating models, optimizing 
+algorithms,extracting meaningful insights from large data stes
+
+normal distribution:
+continuous probability distriubtion syummetricc around mean froming bell curve
+- curve is bell shaped
+- symmetric around mean 
+- unimodal, only one mode
+- measure of central tendency are equal mean=mode=median
+- no part of curve lies below x axis as y=f(x) is never -ve
+- tails of curve is asymptotic, approach but never touch x axis
+- area under curve represents probablity and total area above x axis is 1
+
+mean:
+highly affected by extreme values
+biased if skewed: +ve - mode <md<mean
+
+meadian:
+value that divides data set into 2 euqal half
+considesr rank of observation, not value
+not affected by skewness
+
+mode:
+value that repreats amx times
+least affected by skewnness
+not affected by extreme values
+affected by sampling
+
+SD:
+dispersion of data relative to its mean
+absolute, same unit as data
+takes into account every observation
+least affected by sampling
+not affected by extreme observations as more weigh tto extreme than closer to mean
+spread of data(how representative is mean)
+comparare consistency
+compare Zscore
+
+CV:
+scatterness of data relaticve to mean
+relative
+higher CV means higher spread from mean
+used when units are different
+
+correaltion:
+statistical method to measure strength and direction of linear 
+rekationshipo between 2 vairables
+-1<r<1
+r<0; positive relation, r=0; no ,r<0 -ve
+assumptions:
+linearity- relationship between 2 varailbes is linear
+normality- both variables are approximately normally distributed
+homoscedasticity- spread of data points around regression line is
+consistnt across all levels of independen variable
+scale- both variables should be continuous and measured on intervfal sclae
+no outliers- data set should be free from significant outliers as they
+can distort correlation
+
+regerssion:
+statistical method to determine eqn if line that best predicts
+the dependent variable(response) based on independent(predicotr)
+fcouses on causation/dependecny not just association
+
+dispersion:
+degree to which numerical data tends to spread about an average value
+absolute - absolute magnitude of average of deviatoin in indiviual values, same units
+range,inter fractile/quartile/percentril range,mean deviation,sd,varance
+relative- ratio os a masure of absolute vairation to appropraite average
+for comparing variability of 2/more data sets
+c of range,ifr,mean devation,variation
+
+skewness:
+measure of asymmetry of probability distribution about its mean
+
+kurtosis:
+measure of flatness of peakness of probability distribution
+
+partition value:
+statistical measure that diveide a data set into specific prropportion
+percentile: divide into 100 equal parts
+decile: 10 parts
+quartile: 4 parts
+
+mutually exclusive:
+cant occur together simlutaneuosly
+tossing coin, result of exam
+P(A n B)=0
+P(A or B) = P(A) + P(B)
+	= P(A) + P(B) - P(A n B) ; non
+
+independent events:
+if occurence of one event doesnt affect outcome of other
+tossing coin,
+P(A and B)=P(A)xP(B)
+	= P(A)xP(B/A) ; non
+	= P(B)xP(A/B) 
+
+bayes theorem:
+extension of condtional probability that revises prior estimates of
+probability on the basis of additional inforation
+
+binomial distribution:
+discrete probability distribution used when there are 2 possible outcomes
+in each trial
+- n identical trials fixed in advance
+- each trial has only 2 possible outcomes, success failure
+- trials are independent of each other
+- probablilty of succus is constant
+
+posson distribution:
+discrete probability distributoin to model no. of random occurence of
+some event in spaecified unit of time
+- theoretically infinte no. of occurence of event is possible in interval
+- events occur independently
+- average no. of occurence in specified time is known
+- probability of event occuring is proportional to length of time
+- probability of succuess in extremely small interval is vitrtually 0
+
+
+
+

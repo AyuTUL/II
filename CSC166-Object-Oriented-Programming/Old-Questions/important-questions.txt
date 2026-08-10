@@ -1,0 +1,260 @@
+destructor:
+special member function used to destroy objects created by constructor
+called automatically when object  goes out of its scope
+same name as class name precedby by ~
+no return type
+caant be overloaded
+in inheritance, calling order is reverse of inheritance
+
+copy constructor:
+used to initialize object using existing object
+called when one object is copied into another
+default constructor provided by compiler does shallow copy (copy by value)
+user defined constructor with & argument does deep copy
+
+object:
+basic run time entites in oos.
+instance of a class 
+they represent anything that exists in real world
+interact with each other through message passing
+
+adv of oop:
+	code reusability- using inheritance, class can inherit properties of
+another class. reuse and reduce redundancy as common feauters can be
+define in base class and inherited byd erived class
+	data enncapsulation- warpping up data nad functions in single unit class
+restricting access to them using class specifiers private,protected
+to protect data integrity and how data is modified
+	abstractrion: represneting essential features while hiding background detila
+improves secutiy reduce complexity
+	polymorphism: different function with same name. for code flexible and veratile
++ can be used to perform addition or concat
+	dynamic binding: virtual function, correct function wil be called based on
+actual object type instead of decalre type which helps to handle new class
+witthout modificartion
+
+type conversion:
+convewrsion of object of one data type into another
+automatic for basic data type
+explicity defined by programmer for user defined
+
+basic to udf:
+one argument constructor
+s into hr min sec
+
+udf tp basic:
+overloaded casting operator function
+hr min sec into s
+
+9C = 5(f-32)
+char(248) for degree sign
+no need constructor with read()
+udf to udf:
+one argument constructor in destination class 
+(define source first)
+or overloaded casting operator function in source class
+(define destination first)
+
+dma:
+allocating memory at run time instead of compile time
+when we dont know size of array until run time
+
+polymorphism:
+allows one interface to be used for different data types/objects
+
+compile timne:
+function to be called is resolved at compile time
+function or operator overloading
+decision is based on function signature(no. or type of arguments)
+faster execution as function resolution happens during compilation
+easy to debug bby checking function call
+Limited flexibility as the method to call is determined before execution.
+Not suitable for cases where method resolution depends on runtime information. 
+#include<iostream>
+using namespace std;
+class Print
+{
+	public:
+		void show(int i)
+		{
+			cout<<"Integer : "<<i<<endl;
+		}
+		void show(char d)
+		{
+			cout<<"Character : "<<d<<endl;
+		}
+};
+int main()
+{
+	Print p;
+	p.show(1);
+	p.show('e');
+	return 0;
+}
+
+run time:
+function to be called is resolved at time of execution
+ingeritance and function overiding
+function to be called is determined based on object type and not pointer type
+flexivble as function callign is decided d.uring executoin
+#include<iostream>
+using namespace std;
+class Base
+{
+	public:
+		virtual void show()
+		{
+			cout<<"Base show"<<endl;
+		}
+		void display()
+		{
+			cout<<"Base display"<<endl;
+		}
+};
+class Derived: public Base
+{
+	public:
+		virtual void show()
+		{
+			cout<<"Derived show"<<endl;
+		}
+		void display()
+		{
+			cout<<"Derived display"<<endl;
+		}	
+};
+int main()
+{
+	Base b,*p;
+	Derived d;
+	cout<<"Base pointer pointing to base object :"<<endl;
+	p=&b;
+	p->show();
+	p->display();
+	cout<<"Base pointer pointing to derived object :"<<endl;
+	p=&d;
+	p->show();
+	p->display();
+	return 0;
+}
+
+function template overloading:
+compile time polymorphism/no.
+define multiple templates with same name but different parameter type
+template<class T,class T,class T>
+template<class T1,class T2>
+show(int a,int b)
+
+inline function:
+declared wit keyword inline
+expands the function at the line of function call instead of usual
+function call mechanism
+function is very small and has to be called many times
+may not work if:
+-function is complex(static variables,recursion,loops) code size large
+-request only, so decisoin is upto compiler based on its optimatzation strat
+-large code size increases memory usage
+-virtual functions cant be inline as inline are compile time but virtual
+are run time
+-in recursion, each fuinction call requires a new tsack frame not possible 
+in inline
+
+default argument function:
+function that takes arguments with default values
+in case of mismatch in argument, uses default value
+defulat value can only be assigned from trailing argument
+
+constructor:
+special member function used to initialize object variables
+automatically called when object of class is created
+name is same as class
+no return type
+
+constructor overloading:
+multiple constructors with same name but different no./type ofargumetns
+area of square triangle rectangle 
+
+default constructor:
+no paramters
+gives default vle to object variables
+provided by compiler if dosent exist
+
+parameterized constructor:
+takes argumetns
+used to initiazle object varibles with specific value
+
+copy constructor:
+create new object by copying an existing object
+default provided by compiler but only shallow copy(by value)
+
+dynamic construcotr:
+to initiazlie objects at run time
+use new to allocxate memory at run time
+when object size isnt known at ru time
+
+this pointer:
+special pointer that points to current object that has called the
+member function
+automatically passed as argument to every member function
+
+static data members:
+initiazlize only once when first obejct of class is created
+only one copy of static variabel is created. shared by rest
+visiblie only inside class but lifetime is throughout program
+
+static member function:
+can only access other static data member
+can be called with class name no object requierd
+
+friend function:
+that is not member of class but can access even private members
+declared in public/private but defined outside class 
+called normally without object
+used to share information between 2/more lcasees (bridge)
+
+friend class:
+allowed access o private/protected members if another class
+
+reinterpet cast:
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num = 65;
+    char *charPtr = reinterpret_cast<char*>(&num);
+
+    // Reinterpreting the integer's memory address as a char pointer
+    cout << "Interpreted character: " << *charPtr << endl; // Output depends on the system's endianness
+    return 0;
+}
+
+virtual function:
+when declared as virtual in base class, it can be overriden by function with same signature(type,no,name)
+in derived class
+for run time polymorphism by binding object to correct function ar runtime
+function will be called accroding to obecjt type insted of pointer type
+when base pointer points to a derived object calls a function, based fucntion
+is claaed though it is pointing to derived object but when declared as 
+virutal in base class, correct function (dervied) will be called by
+overring base function
+
+template class:
+blueprint for creating a class that can work with any data type
+allows generic programming by specifying placeholders for data types
+flexible and reusable code
+
+operator overloadinng:
+compile time polymorphism 
+extra meaning is given to operators so that they can applied to user
+defined data types like class
+done by using special member function caleld operator function
+except :: . .* sizeof typeid ?:
+
+pass by value:
+copy of actual argument is passed to function
+changes made to parameter inseide function does not affect original
+inefficinet to copy large objects
+
+pass by ref:
+original variable is pased to functiom
+changes made to parameter inseide function affects original

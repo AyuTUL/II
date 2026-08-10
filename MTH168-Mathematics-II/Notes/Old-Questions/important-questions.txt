@@ -1,0 +1,134 @@
+Group:
+consider a binary strucutre (G,*). Set G is said to be a group
+under binary soperation * if it follows following conditions:
+Closure property:
+for all a,b ∈ G, a*b ∈ G
+Associative property:
+for all a,b,c ∈ G, (a*b)*c=a*(b*c)
+Existence of identity:
+for all a∈G there exists idenity element e∈G such that a*e=e*a=a
+Existence of inverse
+for all a∈G there exists ai∈G such that a*ai=ai*a=e
+
+sub group:
+closure
+inverse
+
+Ring:
+A non empty set R together with 2 binary operators + . denoted by
+<R,+,.> is ring if:
+R1: <R,+> is abelian group
+R2: closed under multiplication:  for all a,b∈R ab∈R
+R3: Associative under multiplication: for all a,b,c, ∈R (ab)c=a(bc)
+R4: Distributive: for all a,b,c∈R then
+a(b+c)=ab+bc   (a+b)c=ac+bc
+
+Field:
+Commutative ring with identity is called field if every non zero
+element if unit element(non zero elemnt with multiplicative inverse)
+
+Integral domain:
+commutaive ring with identity having no zero divisor
+
+
+
+from theroem, the least square solution of Ax=b coincides with non empty
+set of solution (At.A)x=(At.b)
+
+determinant = 0 ; matrix is singular, non invertible so dependent
+
+pivot in column ; basic variable
+[0 0 0 b] form ; inconsistent
+at least one free variable  ; infinitely many solution
+no free variable ; unique solution
+
+not in [0 0 0 b] form ; consistent ; linear combination ; span ; onto
+
+trivial non trivial for homogenous only ; Ax=0 [A 0]
+at least one free variable ; non trivial ; dependent
+no free variable ; trivial ; independent NFTIOTO ; one to one
+basis? span ? each column has pivot
+Transformation:
+A transformation T:Rn->Rm is a rule that assigns each vector x in Rn
+to a vector T(x) in Rm. Rn is domain of T and Rm is co domain
+
+shear:
+T:R2->R2 T(x)=Ax
+
+contraction: T:R2->R2 T(x)=rx 0<=r<=1
+contraction: T:R2->R2 T(x)=rx r>1
+
+linear transformation:
+A linear transformation is a function T:V->W between 2 vector spaces
+V W that satisifes follwoin conditoins for all vectors v,w ∈ V
+and sclar c:
+additivity:
+T(u+v)=T(u)+T(v)
+homogeneity: T(c.v)=c.T(v)
+single equivalent conditon: T(au+bv) =aT(u)+bt(v)
+
+counter clockwise:
+(1,0) rotates into (cos,sin)
+(0,1) rotates into (-sin,cos)
+clockwise:
+(1,0) rotates into (sin,cos)
+(0,1) rotates into (cos,sin)
+standard matrix A = [T(e1) T(e2)]
+
+one to one: onto: b in Rm is image of at most one x in Rn ; trivial
+onto: b in Rm is image of at least one x in Rn
+
+inverse by row reduction: [A I] => [I A-1]
+
+LU factorization"
+solve Ax=b ; LY=b [L b]=>[I Y] UX=Y [U Y] =>[I X]
+
+Leontief IO model: X=CX+D [I-C D]
+
+subsspace of Rn:
+a set H is subspace in Rn if:
+zero vector ∈ H
+u,v ∈H then u+v∈H
+u∈H then cu∈H
+dim=no. of basis
+
+nulspace:
+the set of all solutions to homogenous eqn Ax=0
+NULA={x:x∈Rn ; Ax=0}
+equal to Ker T
+dimNULA=no. of free variables
+
+Rank of matrix= no. of pivot columns/basic variables
+dimension of matrix=no. of non pivot columns/free variables
+
+2x2 ;area of parallelogram = |det(A)| ; 1st vertex must be (0,0)
+3x3 ;volume of parallel piped =|det(A)| ;1st vertex must be (0,0)
+area of T(S) = |det(A)|.area of S ; S=[b1 b2]
+volume of T(S) = |det(A)|.vol of S ; S=[b1 b2 b3]
+
+colspace:
+ColA=span{a1,a2..} (basic var)
+subspace of Rm
+equal to Range of T
+dimCOLA= no. of basic variables/pivot columns
+
+Kernel:
+T:V->W defined by T(x)=Ax
+KerT={x:x∈V;T(x)=0}={x:x∈V;Ax=0} = NULA
+Image of T={T(x): for all x∈V} =COLA
+
+Rowspace:
+dimROWA=no. of pivot row
+
+casorati:
+each column has pivot; Casorati matrix is invertible for k=0; independent
+
+eigen:
+consider nxn matrix A. if ax=lamda x is nontrivial, lamba is eigen
+value x is eigen vector
+
+inner product:
+<u,v>=<v,u>
+<u+v,w>=<u+w>+<v+w>
+<cu,v>=c<u,v>
+<u,v> >=0 <u,u>=0 iff u=0
